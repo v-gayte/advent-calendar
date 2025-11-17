@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f004c1 0%, #ff0000 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+.day {
+    background: linear-gradient(145deg, #c41e3a, #a01729);
+    border-radius: 10px;
+    padding: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+    /* aspect-ratio: 1; */
+    height: 370px;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.day:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.4);
+}
+
+.day-number {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.day.locked {
+    background: linear-gradient(145deg, #666, #444);
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.day.opened {
+    background: linear-gradient(145deg, #2d8a3e, #1e6b2e);
+}
+
+.day.opened::before {
+    content: '✓';
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 1.5em;
+    color: white;
+}
+
+.surprise {
+    display: none;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: white;
+    text-align: center;
+}
+
+.day.opened .surprise {
+    display: block;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.surprise-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.surprise-text {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.surprise-image {
+    width: 100%;
+    max-width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    .calendar {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        justify-items: center;
+    }
+    
+    .day {
+        padding: 20px;
+        width: 140px;
+        height: 320px;
+    }
+    
+    .surprise-image {
+        max-width: 120px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calendar {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    
+    .day {
+        width: 140px;
+        height: 320px;
+    }
+}
