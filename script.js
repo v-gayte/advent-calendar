@@ -89,4 +89,4 @@ function resetCalendar() {
 
 // Initialiser le calendrier
 loadSurprises();
-resetCalendar();
+//resetCalendar();
