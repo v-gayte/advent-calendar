@@ -10,17 +10,17 @@
         "image": "media/coeur 1.jpg"
     },
     {
-        "day": 3,
+        "day": 8,
         "text": "J'ai volé ton idée de carte pokémon",
         "image": "media/pokemon.jpg"
     },
     {
-        "day": 4,
+        "day": 7,
         "text": "Une petite lettre pour toi",
         "image": "media/lettre.jpg"
     },
     {
-        "day": 5,
+        "day": 4,
         "text": "Je t'ai pris des desserts pour quand tu viendras à la maison",
         "image": "media/fruits.jpg"
     },
@@ -30,12 +30,12 @@
         "image": "media/coeur 2.jpg"
     },
     {
-        "day": 7,
+        "day": 5,
         "text": "Bon pour un massage relaxant",
         "image": "media/massage.jpg"
     },
     {
-        "day": 8,
+        "day": 3,
         "text": "Bon pour aller boire un chocolat chaud ensemble",
         "image": "media/chocolat.jpg"
     },
