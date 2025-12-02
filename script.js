@@ -87,6 +87,12 @@ function resetCalendar() {
     }
 }
 
+function openAll() {
+    for (let i = 1; i <=24; i++){
+        localStorage.setItem(`day-${i}`, 'true')
+    }
+}
+
 // Initialiser le calendrier
 loadSurprises();
 //resetCalendar();

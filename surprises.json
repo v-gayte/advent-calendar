@@ -10,14 +10,9 @@
         "image": "media/coeur 1.jpg"
     },
     {
-        "day": 8,
-        "text": "J'ai volé ton idée de carte pokémon",
-        "image": "media/pokemon.jpg"
-    },
-    {
-        "day": 7,
-        "text": "Une petite lettre pour toi",
-        "image": "media/lettre.jpg"
+        "day": 3,
+        "text": "Bon pour aller boire un chocolat chaud ensemble",
+        "image": "media/chocolat.jpg"
     },
     {
         "day": 4,
@@ -25,19 +20,24 @@
         "image": "media/fruits.jpg"
     },
     {
-        "day": 6,
-        "text": "Je t'aime",
-        "image": "media/coeur 2.jpg"
-    },
-    {
         "day": 5,
         "text": "Bon pour un massage relaxant",
         "image": "media/massage.jpg"
     },
     {
-        "day": 3,
-        "text": "Bon pour aller boire un chocolat chaud ensemble",
-        "image": "media/chocolat.jpg"
+        "day": 6,
+        "text": "On fait le sapin ensemble ?",
+        "image": "media/sapin.jpg"
+    },
+    {
+        "day": 7,
+        "text": "Une petite lettre pour toi",
+        "image": "media/lettre.jpg"
+    },
+    {
+        "day": 8,
+        "text": "J'ai volé ton idée de carte pokémon",
+        "image": "media/pokemon.jpg"
     },
     {
         "day": 9,
@@ -61,8 +61,8 @@
     },
     {
         "day": 13,
-        "text": "On fait le sapin ensemble ?",
-        "image": "media/sapin.jpg"
+        "text": "Je t'aime",
+        "image": "media/coeur 2.jpg"
     },
     {
         "day": 14,
